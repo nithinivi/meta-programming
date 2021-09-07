@@ -1,0 +1,13 @@
+
+* macros in lisp
+
+
+  #+begin_src lisp
+  
+  (defmacro nullify (varname) `(setf ,varname nil))
+  
+  (defvar foo 4)
+  (nullify foo)
+  
+#+end_src
+
