@@ -1,5 +1,5 @@
 from structly import Structure , Desciptor
-from typed_struct import Typed, String , PostiveFloat , PostiveInteger
+from typed_Desciptor_protcoal import Typed, String , PostiveFloat , PostiveInteger
 
 
 

@@ -24,16 +24,7 @@ class Desciptor:
 
 class StructureMeta(type):
 
-    # def __prepare__(cls, names,bases):
-    #     return OrderedDict()
-
     def __new__(cls, name, bases, cls_dict):
-        # fields = [
-        #     key for key, val in cls_dict.items() if isinstance(val, Desciptor)
-        # ]
-        # for name in fields:
-        #     clsdict[name].name = name
-
         cls_obj = super().__new__(cls, name, bases, dict(cls_dict))
         sig = make_signature(cls_obj._fields)
         setattr(cls_obj, '__signature__', sig)

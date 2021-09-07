@@ -16,5 +16,5 @@ class Stock1:
 
 
 class Stock(Structure):
-    ## how to access class variable through instance
+  
     _fields = ['name', 'shares', 'price']
